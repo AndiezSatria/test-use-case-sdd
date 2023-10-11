@@ -4,6 +4,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import org.andiez.common.data.repository.AppRepository
 import org.andiez.common.domain.repository.IAppRepository
 
 /**
@@ -15,5 +16,5 @@ import org.andiez.common.domain.repository.IAppRepository
 abstract class RepositoryModule {
 
     @Binds
-    abstract fun provideAppRepository(): IAppRepository
+    abstract fun provideAppRepository(repository: AppRepository): IAppRepository
 }

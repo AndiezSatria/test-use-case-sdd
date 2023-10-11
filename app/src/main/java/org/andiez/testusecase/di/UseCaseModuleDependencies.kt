@@ -9,5 +9,5 @@ import org.andiez.common.domain.usecase.AppUseCase
 @InstallIn(SingletonComponent::class)
 interface UseCaseModuleDependencies {
 
-    fun movieUseCase(): AppUseCase
+    fun appUseCase(): AppUseCase
 }

@@ -32,6 +32,8 @@ object Versions {
     const val activity_compose = "1.7.0"
     const val viewmodel_compose = "2.6.1"
     const val navigation_compose = "2.5.3"
+    const val accompanist = "0.30.1"
+    const val lottie = "5.2.0"
 }
 
 object AndroidLib {
@@ -69,11 +71,13 @@ object AndroidLib {
     const val compose_ui = "androidx.compose.ui:ui:${Versions.compose}"
     const val material_compose = "androidx.compose.material:material:${Versions.compose}"
     const val preview_compose = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
-    const val activity_compose = "androidx.activity:activity-compose${Versions.activity_compose}"
+    const val activity_compose = "androidx.activity:activity-compose:${Versions.activity_compose}"
     const val viewmodel_compose =
         "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.viewmodel_compose}"
     const val navigation = "androidx.navigation:navigation-compose:${Versions.navigation_compose}"
     const val hilt_navigation_compose = "androidx.hilt:hilt-navigation-compose:1.0.0"
+    const val accompanist = "com.google.accompanist:accompanist-permissions:${Versions.accompanist}"
+    const val lottie_compose = "com.airbnb.android:lottie-compose:${Versions.lottie}"
 }
 
 object AndroidTestLib {

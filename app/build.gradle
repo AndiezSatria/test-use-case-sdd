@@ -103,4 +103,10 @@ dependencies {
     implementation AndroidLib.navigation
     implementation AndroidLib.hilt_navigation_compose
 
+    // accompanist
+    implementation AndroidLib.accompanist
+
+    // lottie
+    implementation AndroidLib.lottie_compose
+
 }
