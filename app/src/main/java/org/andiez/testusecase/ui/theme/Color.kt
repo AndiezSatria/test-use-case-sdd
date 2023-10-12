@@ -41,3 +41,9 @@ val MuteSecondary = Color(0xFFFAFAFA)
 // Inactive
 val InactivePrimary = Color(0xFFA5A5A5)
 val InactiveSecondary = Color(0xFFCDCDCD)
+
+// Chart Color
+val BlueNeon = Color(0xFF687EFF)
+val RedNeon = Color(0xFFC70039)
+val PurpleNeon = Color(0xFF793FDF)
+val GreenNeon = Color(0xFF247881)

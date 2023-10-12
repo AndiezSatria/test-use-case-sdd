@@ -1,8 +1,8 @@
 object AndroidConfig {
-    const val compileSdkVersion = 33
+    const val compileSdkVersion = 34
     const val buildToolsVersion = "30.0.3"
     const val minSdkVersion = 24
-    const val targetSdkVersion = 33
+    const val targetSdkVersion = 34
     const val version = "1.0"
 }
 
@@ -34,6 +34,8 @@ object Versions {
     const val navigation_compose = "2.5.3"
     const val accompanist = "0.30.1"
     const val lottie = "5.2.0"
+    const val vico_compose = "1.12.0"
+    const val mp_chart = "v3.1.0"
 }
 
 object AndroidLib {
@@ -78,6 +80,9 @@ object AndroidLib {
     const val hilt_navigation_compose = "androidx.hilt:hilt-navigation-compose:1.0.0"
     const val accompanist = "com.google.accompanist:accompanist-permissions:${Versions.accompanist}"
     const val lottie_compose = "com.airbnb.android:lottie-compose:${Versions.lottie}"
+    const val vico_compose = "com.patrykandpatrick.vico:compose:${Versions.vico_compose}"
+    const val vico_core = "com.patrykandpatrick.vico:core:${Versions.vico_compose}"
+    const val mp_chart = "com.github.PhilJay:MPAndroidChart:${Versions.mp_chart}"
 }
 
 object AndroidTestLib {

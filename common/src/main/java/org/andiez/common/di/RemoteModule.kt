@@ -1,14 +1,17 @@
 package org.andiez.common.di
 
+import android.content.Context
 import com.github.ajalt.timberkt.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.andiez.common.data.source.remote.interceptor.HeaderInterceptor
 import org.andiez.common.data.source.remote.service.AppService
+import org.andiez.common.util.JsonHelper
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -52,4 +55,7 @@ class RemoteModule {
     @Provides
     fun provideApiServices(retrofit: Retrofit): AppService =
         retrofit.create(AppService::class.java)
+
+    @Provides
+    fun provideJsonHelper(@ApplicationContext context: Context): JsonHelper = JsonHelper(context)
 }

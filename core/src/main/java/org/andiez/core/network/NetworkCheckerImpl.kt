@@ -4,8 +4,10 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class NetworkCheckerImpl(val ctx: Context) : NetworkChecker {
+class NetworkCheckerImpl @Inject constructor(@ApplicationContext val ctx: Context) : NetworkChecker {
 
     companion object {
         const val CONNECTION_CELLULAR = 1

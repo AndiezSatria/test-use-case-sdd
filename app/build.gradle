@@ -109,4 +109,10 @@ dependencies {
     // lottie
     implementation AndroidLib.lottie_compose
 
+    // Line Chart Compose
+    implementation AndroidLib.vico_compose
+    implementation AndroidLib.vico_core
+
+    // Pie Chart
+    implementation AndroidLib.mp_chart
 }

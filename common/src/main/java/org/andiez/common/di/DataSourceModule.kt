@@ -8,6 +8,9 @@ import org.andiez.common.data.source.local.LocalDataSource
 import org.andiez.common.data.source.local.LocalDataSourceImpl
 import org.andiez.common.data.source.remote.RemoteDataSource
 import org.andiez.common.data.source.remote.RemoteDataSourceImpl
+import org.andiez.core.network.NetworkChecker
+import org.andiez.core.network.NetworkCheckerImpl
+import javax.inject.Singleton
 
 /**
  * Created by AndiezSatria on 17/04/2023.
@@ -22,4 +25,8 @@ abstract class DataSourceModule {
 
     @Binds
     abstract fun provideRemoteDataSource(remoteDataSourceImpl: RemoteDataSourceImpl): RemoteDataSource
+
+    @Binds
+    @Singleton
+    abstract fun provideNetworkChecker(networkCheckerImpl: NetworkCheckerImpl): NetworkChecker
 }

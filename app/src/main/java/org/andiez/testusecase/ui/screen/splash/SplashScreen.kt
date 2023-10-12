@@ -1,4 +1,4 @@
-package org.andiez.testusecase.ui.screen.main
+package org.andiez.testusecase.ui.screen.splash
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -37,7 +37,7 @@ fun SplashScreen(
             .background(ActivePrimary)
     ) {
         Text(
-            text = "Check Ongkos Kirim",
+            text = "Chart Portofolio",
             style = MaterialTheme.typography.h6.copy(
                 color = BackgroundPrimary
             ),
