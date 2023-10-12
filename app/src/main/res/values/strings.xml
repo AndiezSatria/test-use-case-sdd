@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Test Use Case</string>
+    <string name="txt_main_screen_title">Pembayaran App</string>
+    <string name="txt_balance">Saldo</string>
+    <string name="txt_transaction_history">Riwayat Transaksi</string>
+    <string name="txt_scanner_screen_title">Scan QR</string>
+    <string name="txt_confirm">Ya</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_payment_success">Transaksi berhasil!</string>
+    <string name="txt_back_to_home">Kembali</string>
+    <string name="txt_scan_qr">Scan QRIS</string>
+    <string name="txt_transaction_empty">Transaksi masih kosong.</string>
 </resources>

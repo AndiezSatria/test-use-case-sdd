@@ -37,7 +37,7 @@ fun SplashScreen(
             .background(ActivePrimary)
     ) {
         Text(
-            text = "Check Ongkos Kirim",
+            text = "Pembayaran QRIS",
             style = MaterialTheme.typography.h6.copy(
                 color = BackgroundPrimary
             ),

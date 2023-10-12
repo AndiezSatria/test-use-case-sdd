@@ -3,6 +3,8 @@ package org.andiez.common.util
 import org.json.JSONObject
 import retrofit2.HttpException
 import java.text.NumberFormat
+import java.text.SimpleDateFormat
+import java.util.Calendar
 import java.util.Locale
 
 /**
@@ -36,5 +38,17 @@ object CommonUtils {
     fun formatThousands(input: Long): String {
         val numberFormat = NumberFormat.getInstance(Locale("in", "IN"))
         return numberFormat.format(input)
+    }
+
+    fun getCalendarString(format: String, calendar: Calendar): String {
+        val formatter = SimpleDateFormat(format, Locale("ID", "id"))
+        return formatter.format(calendar.time)
+    }
+
+    fun getCalendarString(format: String, timeInMillis: Long): String {
+        val calendar = Calendar.getInstance()
+        calendar.timeInMillis = timeInMillis
+        val formatter = SimpleDateFormat(format, Locale("ID", "id"))
+        return formatter.format(calendar.time)
     }
 }

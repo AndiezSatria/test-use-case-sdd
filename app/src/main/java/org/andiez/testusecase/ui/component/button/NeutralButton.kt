@@ -51,6 +51,7 @@ fun SecondaryNeutralButton(
 fun TertiaryNeutralButton(
     modifier: Modifier = Modifier,
     onClick: () -> Unit,
+    textColor: Color = ActivePrimary,
     text: String,
 ) {
     BaseFilledButton(

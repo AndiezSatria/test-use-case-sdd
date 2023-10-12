@@ -109,4 +109,12 @@ dependencies {
     // lottie
     implementation AndroidLib.lottie_compose
 
+    // Camera
+    implementation AndroidLib.camera2
+    implementation AndroidLib.camera_lifecycle
+    implementation AndroidLib.camera_view
+
+    // ZXing
+    implementation AndroidLib.zxing
+
 }

@@ -34,6 +34,8 @@ object Versions {
     const val navigation_compose = "2.5.3"
     const val accompanist = "0.30.1"
     const val lottie = "5.2.0"
+    const val zxing = "3.3.3"
+    const val camera2 = "1.2.3"
 }
 
 object AndroidLib {
@@ -78,6 +80,10 @@ object AndroidLib {
     const val hilt_navigation_compose = "androidx.hilt:hilt-navigation-compose:1.0.0"
     const val accompanist = "com.google.accompanist:accompanist-permissions:${Versions.accompanist}"
     const val lottie_compose = "com.airbnb.android:lottie-compose:${Versions.lottie}"
+    const val zxing = "com.google.zxing:core:${Versions.zxing}"
+    const val camera2 = "androidx.camera:camera-camera2:${Versions.camera2}"
+    const val camera_lifecycle = "androidx.camera:camera-lifecycle:${Versions.camera2}"
+    const val camera_view = "androidx.camera:camera-view:${Versions.camera2}"
 }
 
 object AndroidTestLib {

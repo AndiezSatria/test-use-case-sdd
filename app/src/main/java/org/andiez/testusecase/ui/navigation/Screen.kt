@@ -1,5 +1,7 @@
 package org.andiez.testusecase.ui.navigation
 
+import org.andiez.common.data.source.local.pref.DataConstant
+
 /**
  * Created by AndiezSatria on 01/05/2023.
  */
@@ -7,7 +9,10 @@ package org.andiez.testusecase.ui.navigation
 sealed class Screen(val route: String) {
     object Splash : Screen("splash")
     object Main : Screen("main")
-    object Detail : Screen("detail")
-    object About : Screen("about")
-    object Favorite : Screen("favorite")
+    object QrCode : Screen("qr_code")
+    object Success :
+        Screen("success/{${DataConstant.MERCHANT_ARGS}}/{${DataConstant.AMOUNT_ARGS}}") {
+        fun createRoute(merchantName: String, transactionAmount: Long) =
+            "success/$merchantName/$transactionAmount"
+    }
 }

@@ -96,6 +96,69 @@ fun SecondaryAppBar(
 }
 
 @Composable
+fun SecondaryBackgroundAppBar(
+    modifier: Modifier = Modifier,
+    onBackPressed: (() -> Unit)? = null,
+    title: String,
+    centeredTitle: Boolean = false,
+    actions: @Composable RowScope.() -> Unit,
+) {
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .background(BackgroundPrimary)
+            .padding(
+                start = 24.dp,
+                top = 48.dp,
+                bottom = 24.dp,
+                end = 24.dp
+            ),
+    ) {
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.Top,
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                onBackPressed?.let {
+                    IconButton(
+                        onClick = { onBackPressed() },
+                        modifier = Modifier.size(24.dp),
+                    ) {
+                        Icon(
+                            painter = painterResource(id = R.drawable.ic_chevron_left_white),
+                            tint = ContentPrimary,
+                            contentDescription = null,
+                            modifier = Modifier
+                                .size(24.dp),
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(12.dp))
+                }
+                Text(
+                    title,
+                    maxLines = 1,
+                    style = MaterialTheme.typography.h4.copy(
+                        color = ContentPrimary
+                    ),
+                    textAlign = if (centeredTitle) TextAlign.Center else TextAlign.Start,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+                Spacer(modifier = Modifier.width(12.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End,
+                    content = actions
+                )
+            }
+        }
+    }
+}
+
+@Composable
 fun SecondaryAppBar(
     modifier: Modifier = Modifier,
     onBackPressed: (() -> Unit)? = null,

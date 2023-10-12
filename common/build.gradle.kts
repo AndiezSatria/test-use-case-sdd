@@ -70,4 +70,12 @@ dependencies {
 
     // Timber
     implementation(AndroidLib.timber)
+
+    // Camera
+    implementation (AndroidLib.camera2)
+    implementation(AndroidLib . camera_lifecycle)
+    implementation(AndroidLib . camera_view)
+
+    // ZXing
+    implementation(AndroidLib.zxing)
 }
