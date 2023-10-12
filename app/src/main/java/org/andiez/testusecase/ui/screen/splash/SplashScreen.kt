@@ -1,4 +1,4 @@
-package org.andiez.testusecase.ui.screen.main
+package org.andiez.testusecase.ui.screen.splash
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

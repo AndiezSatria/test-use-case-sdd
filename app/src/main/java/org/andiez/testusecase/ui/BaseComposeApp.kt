@@ -15,11 +15,11 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import org.andiez.common.data.source.local.pref.DataConstant
 import org.andiez.testusecase.ui.navigation.Screen
-import org.andiez.testusecase.ui.screen.main.SplashScreen
+import org.andiez.testusecase.ui.screen.splash.SplashScreen
 import org.andiez.testusecase.ui.screen.scanner.ScannerScreen
 import org.andiez.testusecase.ui.screen.scanner.ScannerViewModel
-import org.andiez.testusecase.ui.screen.splash.MainScreen
-import org.andiez.testusecase.ui.screen.splash.MainViewModel
+import org.andiez.testusecase.ui.screen.main.MainScreen
+import org.andiez.testusecase.ui.screen.main.MainViewModel
 import org.andiez.testusecase.ui.screen.success.SuccessScanner
 import org.andiez.testusecase.ui.screen.success.SuccessViewModel
 

@@ -1,4 +1,4 @@
-package org.andiez.testusecase.ui.screen.splash
+package org.andiez.testusecase.ui.screen.main
 
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.rememberLazyListState

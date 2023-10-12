@@ -1,4 +1,4 @@
-package org.andiez.testusecase.ui.screen.splash
+package org.andiez.testusecase.ui.screen.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

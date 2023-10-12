@@ -1,4 +1,4 @@
-package org.andiez.testusecase.ui.screen.splash
+package org.andiez.testusecase.ui.screen.main
 
 import org.andiez.common.domain.model.Transaction
 import org.andiez.common.domain.model.User
