@@ -37,7 +37,7 @@ fun SplashScreen(
             .background(ActivePrimary)
     ) {
         Text(
-            text = "Chart Portofolio",
+            text = "Retrofit Portofolio",
             style = MaterialTheme.typography.h6.copy(
                 color = BackgroundPrimary
             ),

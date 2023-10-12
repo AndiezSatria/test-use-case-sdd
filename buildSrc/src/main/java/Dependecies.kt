@@ -36,6 +36,7 @@ object Versions {
     const val lottie = "5.2.0"
     const val vico_compose = "1.12.0"
     const val mp_chart = "v3.1.0"
+    const val coil_compose = "2.4.0"
 }
 
 object AndroidLib {
@@ -83,6 +84,7 @@ object AndroidLib {
     const val vico_compose = "com.patrykandpatrick.vico:compose:${Versions.vico_compose}"
     const val vico_core = "com.patrykandpatrick.vico:core:${Versions.vico_compose}"
     const val mp_chart = "com.github.PhilJay:MPAndroidChart:${Versions.mp_chart}"
+    const val coil_compose = "io.coil-kt:coil-compose:${Versions.coil_compose}"
 }
 
 object AndroidTestLib {

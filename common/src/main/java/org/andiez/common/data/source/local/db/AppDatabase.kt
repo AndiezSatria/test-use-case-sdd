@@ -3,6 +3,7 @@ package org.andiez.common.data.source.local.db
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import org.andiez.common.data.source.local.dao.AppDao
+import org.andiez.common.data.source.local.entity.PromoEntity
 import org.andiez.common.data.source.local.entity.UserEntity
 
 /**
@@ -11,9 +12,10 @@ import org.andiez.common.data.source.local.entity.UserEntity
 
 @Database(
     entities = [
-        UserEntity::class
+        UserEntity::class,
+        PromoEntity::class,
     ],
-    version = 2,
+    version = 4,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {

@@ -6,7 +6,11 @@ import okhttp3.Response
 class HeaderInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder()
-            .addHeader("X-Api-Key", "4b4df2ea3a154950852b6fda536cfb7f").build()
+//            .addHeader(
+//                "Authorization",
+//                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc1OTE0MTUwLCJleHAiOjE2Nzg1MDYxNTB9.TcIgL5CDZYg9o8CUsSjUbbUdsYSaLutOWni88ZBs9S8"
+//            )
+            .build()
         return chain.proceed(request)
     }
 }

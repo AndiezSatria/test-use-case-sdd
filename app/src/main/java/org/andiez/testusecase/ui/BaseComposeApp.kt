@@ -50,14 +50,14 @@ fun BaseComposeApp(
                 val viewModel = hiltViewModel<MainViewModel>()
                 MainScreen(
                     viewModel = viewModel,
-                    onChartClicked = { navController.navigate(Screen.Detail.createRoute(it)) }
+                    onPromoClicked = { navController.navigate(Screen.Detail.createRoute(it)) }
                 )
             }
             composable(
                 route = Screen.Detail.route,
                 arguments = listOf(
-                    navArgument(DataConstant.CHART_NAME_ARGS) {
-                        type = NavType.StringType
+                    navArgument(DataConstant.PROMO_ID_ARGS) {
+                        type = NavType.IntType
                     }
                 ),
             ) {

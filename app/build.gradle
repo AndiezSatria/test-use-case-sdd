@@ -115,4 +115,7 @@ dependencies {
 
     // Pie Chart
     implementation AndroidLib.mp_chart
+
+    // Coil
+    implementation AndroidLib.coil_compose
 }

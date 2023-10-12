@@ -9,7 +9,7 @@ import org.andiez.common.data.source.local.pref.DataConstant
 sealed class Screen(val route: String) {
     object Splash : Screen("splash")
     object Main : Screen("main")
-    object Detail : Screen("detail/{${DataConstant.CHART_NAME_ARGS}}") {
-        fun createRoute(chartName: String) = "detail/$chartName"
+    object Detail : Screen("detail/{${DataConstant.PROMO_ID_ARGS}}") {
+        fun createRoute(id: Int) = "detail/$id"
     }
 }
